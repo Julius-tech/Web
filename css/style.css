@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%;
   padding: 0px;
   margin: 0px;
   background-color: #efeeca;
@@ -142,6 +144,9 @@ header .menu-toggle {
   display: none;
 }
 
+.page-wrapper {
+  min-height: 100%;
+}
 .page-wrapper a:hover {
   color: #038257;
 }
@@ -256,6 +261,8 @@ header .menu-toggle {
 .content .main-content .recent-post-title {
   margin: 20px;
 }
+
+/* SIDE BAR */
 .content .sidebar {
   width: 30%;
   float: left;
@@ -293,6 +300,32 @@ header .menu-toggle {
 .content .sidebar .section.topics ul li a:hover {
   padding-left: 10px;
   transition: all 0.3s;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #303036;
+  color: #d3d3d3;
+  height: 400px;
+  position: relative;
+}
+
+.footer .footer-content {
+  border: 1px solid red;
+  height: 350px;
+}
+
+.footer .footer-bottom {
+  background-color: #343a40;
+  color: #686868;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 2opx;
 }
 
 /* MEDIA QUERIES */
